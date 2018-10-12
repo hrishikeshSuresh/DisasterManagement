@@ -1,6 +1,6 @@
 <h1><b>Disaster relief Management</h1></b>
 
-<h4><b>Problem Statement</b><h4>:<br/> 
+<h4><b>Problem Statement</b></h4>:<br/> 
 		  Efficient allocation and management of resources between relief camps and shelters to avoid wastage of important resources during disaster relief operations.<br/>Help NGOs to respond to various needs of individuals in an affected area and maintain effective co-ordination between government, NGOs and general public to aid the relief operations.<br/><br/>
 <b>Inspiration</b>:<br/> During the recent events of Kerala Floods (2018), a lot of important necessities like medicine, food etc.
 were wasted.<br/>Read [here](https://www.thehindu.com/news/national/kerala/medical-relief-ops-lack-a-centralised-system/article24763621.ece) .<br/><br/>
