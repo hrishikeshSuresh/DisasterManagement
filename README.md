@@ -28,7 +28,7 @@ If any particular shelter is over-crowded, authorities can put in a tweet reques
 	
 We are also looking at mining twitter data constantly, looking for disaster-specific topics and hashtags. We plan to do disaster-specific summarizations by analyzing this data and using this to generate reports related to sub-topics of a disaster. These kind of summarizations in food, medicines or infrastructure could be of use to different interest groups like rescue workers, government agencies, field experts or common people, which could help them in making informed decisions.
 
-Since the volume of such data can be really high,**Microsoft Azure can help us manage and store this data effectively and help us train our models efficiently at the same time.**
+Since the volume of such data can be really high, **Microsoft Azure can help us manage and store this data effectively and help us train our models efficiently at the same time.**
 
 
 #### Overview
