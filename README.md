@@ -9,7 +9,7 @@
 #### Inspiration
 
 During the recent events of Kerala Floods (2018), a lot of important necessities like medicine, food etc.
-were wasted. Read [here](https://www.thehindu.com/news/national/kerala/medical-relief-ops-lack-a-centralised-system/article24763621.ece) This inspired us to come up with this idea, and Microsoft Azure can provide a huge kickstart to our plans.
+were wasted. Read [here](https://www.thehindu.com/news/national/kerala/medical-relief-ops-lack-a-centralised-system/article24763621.ece) . This inspired us to come up with this idea, and Microsoft Azure can provide a huge kickstart to our plans.
 
 
 
