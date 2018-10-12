@@ -2,7 +2,7 @@
 
 #### Problem Statement
 
-+ Efficient allocation and management of resources between relief camps and shelters to avoid wastage of important resources during disaster relief operations.
++ Efficient allocation and management of resources between relief camps and shelters to avoid wastage of critical resources during disaster relief operations.
 + Help NGOs to respond to various needs of individuals in an affected area and maintain effective co-ordination between government, NGOs and general public to aid the relief operations.
 
 
