@@ -1,9 +1,7 @@
-Disaster relief Management
+<h1><b>Disaster relief Management</h1><b>
 
-Problem Statement : 
-					Efficient allocation and management of resources between relief camps and shelters to avoid wastage of
-					important resources during disaster relief operations.
-					Help NGOs to respond to various needs of individuals in an affected area and maintain effective co-ordination between
+<b>Problem Statement</b>:<br/> 
+		  Efficient allocation and management of resources between relief camps and shelters to avoid wastage of important resources during disaster relief operations.<br/>Help NGOs to respond to various needs of individuals in an affected area and maintain effective co-ordination between
 					government, NGOs and general public to aid the relief operations.
 Inspiration : 
 				[During the recent events of Kerala Floods (2018), a lot of important necessities like medicine, food etc.
