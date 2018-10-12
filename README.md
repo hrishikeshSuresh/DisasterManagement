@@ -1,4 +1,4 @@
-# Disaster relief Management
+# Disaster Relief Management
 
 #### Problem Statement
 
@@ -9,7 +9,7 @@
 #### Inspiration
 
 During the recent events of Kerala Floods (2018), a lot of important necessities like medicine, food etc.
-were wasted. 
+were wasted. This inspired us to come up with this idea, and Microsoft Azure can provide a huge kickstart to our plans.
 Read [here](https://www.thehindu.com/news/national/kerala/medical-relief-ops-lack-a-centralised-system/article24763621.ece)
 
 
@@ -23,8 +23,8 @@ If they reply within a stipulated time, then the resources that was promised wil
 #### Overview
 	
 The proposed centralized relief management will
-+ Save a lot of lives 
-+ Save resources 
-+ Improve co-ordination between NGOs and the government during relief work
++ Help in quick co-ordination and relief, as the resources would reach the right place, at the right time and in correct quantities
++ Save resources and prevent their wastage
++ Regular surveys and data collections will help to serve the demands with the right resources, area surveys will help determine safe points after disasters and also be able to determine correct locations to set-up health camps
 	
 
