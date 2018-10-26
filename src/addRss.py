@@ -37,7 +37,6 @@ print(data_json)
 #fp.write("use SourceDB\n")
 #fp.write("show collections\n")
 
-
 #variable to see which lines from input are not recognized
 i = 0
 #for inserting values into collection
