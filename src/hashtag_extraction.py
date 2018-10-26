@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import tweepy
 import csv
 import pandas as pd
