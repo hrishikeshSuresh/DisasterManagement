@@ -50,6 +50,9 @@ with open("tweet_src.txt") as f:
 	for line in f:
 		try:	
 			#row = collection1.insert_one(line)
+			line = line.replace("False", "false")
+			line = line.replace("True", "true")
+			line = line.replace("None", "null")
 			fp.write("db.shelterInfo.insert("+ line +")\n")
 			pp.pprint(line)
 			#print(row.inserted_id)

@@ -17,7 +17,7 @@ api = tweepy.API(auth,wait_on_rate_limit=True)
 
 # Open/Create a file to append data
 #csvFile = open('tweet_dataX.csv', 'w')
-f = open('tweet_dataX.txt', 'w')
+f = open('tweet_src.txt', 'w')
 f_text = open('tweet_text.txt', 'w')
 pp = pprint.PrettyPrinter(indent = 2)
 #Use csv Writer
@@ -29,6 +29,6 @@ for tweet in tweepy.Cursor(api.search,q="#SkelligeTsunamiNotReal",
     pp.pprint(tweet._json)
 	#csvWriter.writerow([tweet.created_at, tweet.text.encode('utf-8')])
     #csvWriter.writerow(str(tweet))
-    f.write(str(tweet._json))
+    f.write(str(tweet._json)+"\n")
     f_text.write(str(tweet.text))
 f.close()
