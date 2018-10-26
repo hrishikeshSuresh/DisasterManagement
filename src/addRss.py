@@ -53,7 +53,7 @@ with open("tweet_src.txt") as f:
 			line = line.replace("False", "false")
 			line = line.replace("True", "true")
 			line = line.replace("None", "null")
-			fp.write("db.shelterInfo.insert("+ line +")\n")
+			fp.write("db.rssInfo.insert("+ line +")\n")
 			pp.pprint(line)
 			#print(row.inserted_id)
 		except:
