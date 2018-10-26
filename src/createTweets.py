@@ -15,12 +15,15 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 # authentication of access token and secret 
 auth.set_access_token(access_token, access_token_secret) 
 api = tweepy.API(auth) 
+
+user = api.me()
+print(user.screen_name)
   
-rssList = ['Food Packets', 'Sanitary Napkins', 'Water', 'Medkits', 'Blankets', 'Clothes']
+rssList = ['Food Packets', 'Sanitary Napkins', 'Water Bottles', 'Medkits', 'Blankets', 'Clothes']
 
 for i in range(10):
 	# update the status 
-	tweet = u"We can donate "+str(random.randrange(50,200))+" "+rssList[random.randrange(0,len(rssList))]+", "+str(random.randrange(50,200))+" "+rssList[random.randrange(0,len(rssList))]+" "  +"#SkelligeTsunamiNotReal"
+	tweet = u"We can donate "+str(random.randrange(50,200))+" "+rssList[random.randrange(0,len(rssList), 1)]+", "+str(random.randrange(50,200))+" "+rssList[random.randrange(0,len(rssList), 1)]+" "  +"#SkelligeTsunamiNotReal"
 	print(tweet)
 	api.update_status(status = tweet)
 	time.sleep(60)

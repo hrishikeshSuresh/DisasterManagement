@@ -8,7 +8,7 @@ import pprint
 import nltk
 
 stops = [',','for','and','.','or']
-units = ['liters','liter','kg','L','ML','ml','g','l','pieces', 'units','packets','bottles','packet','bottle','piece','litre','litres']
+units = ['liters','liter','kg','L','ML','ml','g','l','pieces', 'units','packet','bottle','piece','litre','litres']
 
 def Keyvaluesplit (Tweet):
     words = nltk.word_tokenize (Tweet)
@@ -17,7 +17,7 @@ def Keyvaluesplit (Tweet):
         if (words[i].isnumeric()==True):
             j = i
             temp_list = []
-            while (words[j] not in stops):
+            while (words[j] not in stops and j<len(words)-1):
                 if (words[j]!='of'):
                     temp_list.append(words[j])
                 j+=1
@@ -57,7 +57,7 @@ for tweet in tweepy.Cursor(api.search,q="##SkelligeTsunamiNotReal",
     Dic_tweet = tweet._json
     Dic_tweet['Food Packets'] = 0
     Dic_tweet['Sanitary Napkins'] = 0
-    Dic_tweet['Water'] = 0
+    Dic_tweet['Water Bottles'] = 0
     Dic_tweet['Medkits'] = 0
     Dic_tweet['Blankets'] = 0
     Dic_tweet['Clothes'] = 0
@@ -85,7 +85,7 @@ for tweet in tweepy.Cursor(api.search,q="##SkelligeTsunamiNotReal",
     #print (tweet._json + Dict)
     print (Dict)
     print (Dic_tweet)
-    f.write(str(Dic_tweet))
+    f.write(str(Dic_tweet)+"\n")
     #print (type(tweet))
     #print (type(tweet._json))
     

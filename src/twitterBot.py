@@ -17,9 +17,10 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret) 
 api = tweepy.API(auth)
 
-name = ""
-shelter = ""
-location = ""
+name = sys.argv[1]
+shelter_name = sys.argv[2]
+location = sys.argv[3]
 
-tweet = "Thank you "+name+". Please send the promised resources to "+shelter_name+","+location+".#SkelligeTsunamiNotReal"
-api.update_status(status = tweet)
+tweet = "Thank you @"+name+". Please send the promised resources to "+shelter_name+","+location+".#SkelligeTsunamiNotReal"
+#api.update_status(status = tweet)
+print(tweet)

@@ -13,7 +13,7 @@ import ast
 from pandas.tools.plotting import scatter_matrix
 
 #creating MongoClient object
-client = MongoClient('localhost', port = 27018)
+client = MongoClient('localhost', port = 27017)
 
 #printing all databases
 print(client.database_names())
