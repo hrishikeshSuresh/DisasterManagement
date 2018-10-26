@@ -8,6 +8,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import pprint
 import sys
+import json
+import ast
 from pandas.tools.plotting import scatter_matrix
 
 #creating MongoClient object
@@ -26,16 +28,19 @@ db = client.SourceDB
 collection1 = db.rssInfo
 
 pp = pprint.PrettyPrinter(indent = 2)
+#pl = collection1.insert_one({"author":"mike"})
+
 
 #selecting all rows in collection
 data_json = collection1.find()
-print(data_json)
+
+#print(collection1.find())
 
 #creating sql file which can be run into mongodb directly from bash
-#fp = open("tweets.sql", "w")
+fp = open("tweets.sql", "w")
 
-#fp.write("use SourceDB\n")
-#fp.write("show collections\n")
+fp.write("use SourceDB\n")
+fp.write("show collections\n")
 
 #variable to see which lines from input are not recognized
 i = 0
@@ -43,22 +48,21 @@ i = 0
 with open("tweet_src.txt") as f:
 #for line in sys.stdin:
 	for line in f:
-		pp.pprint(line)
 		try:	
-			row = collection1.insert_one(line)
-			#fp.write("db.shelterInfo.insert("+ line +")\n")
+			#row = collection1.insert_one(line)
+			fp.write("db.shelterInfo.insert("+ line +")\n")
+			pp.pprint(line)
 			#print(row.inserted_id)
 		except:
 			print(i)
 			i = i + 1
 			pass;
 
-#fp.close()
+fp.close()
 #or use sys.stdin if data is too large
 #can be added depending on the size of json file
 
-data_json = collection1.find()
-print(data_json)
+cursor = collection1.find()
 client.close()
 
 exit(0)
