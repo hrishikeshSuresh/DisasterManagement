@@ -22,5 +22,5 @@ shelter_name = sys.argv[2]
 location = sys.argv[3]
 
 tweet = "Thank you @"+name+". Please send the promised resources to "+shelter_name+","+location+".#SkelligeTsunamiNotReal"
-#api.update_status(status = tweet)
+api.update_status(status = tweet)
 print(tweet)

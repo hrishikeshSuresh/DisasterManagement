@@ -21,16 +21,19 @@ def checkRSS(target_i, current_j, rssName, db):
 		if(i[rssName] == 0):
 			print("No spare resources available")
 			return;
+		#allocated = 0
 		if(diff >= 0):
 			if(i[rssName]>0):
-				diff-= i[rssName]
+				#diff-= i[rssName]
+				temp = diff
+				temp -= i[rssName]
 				allocated = 0
-				if diff<0:
+				if temp<0:
 					allocated = diff
-					i[rssName] -= diff
+					#i[rssName] -= diff
 				else:
 					allocated = i[rssName]
-					i[rssName] = 0
+					#i[rssName] = 0
 				#Tweet
 				command = ["python3","twitterBot.py",i["user"]["screen_name"],current_j["Shelter Name"],current_j["Location"]]
 				print(command)	
@@ -38,6 +41,8 @@ def checkRSS(target_i, current_j, rssName, db):
 				print("Resource %s allocated by %s in amount %d"%(rssName, i["user"]["screen_name"], allocated))
 				i[rssName]-=allocated
 				current_j[rssName]+=allocated
+				update1 = db.rssInfo.update_one({'_id' : i['_id']}, {'$set' : { rssName : i[rssName]}})
+				update2 = db.currentInfo.update_one({'_id' : current_j['_id']}, {'$set' : {rssName : current_j[rssName]}})
 	return;
 
 client = MongoClient('localhost', port = 27017)
